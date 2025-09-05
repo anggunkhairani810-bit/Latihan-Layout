@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Webpage</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      .container {
+        width: 800px;
+        margin: 0 auto;
+      }
+      .header {
+        background-color: white;
+        min-height: 50px;
+        text-align: center;
+      }
+      .logo img {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+      }
+      .menu ul {
+        padding: 0;
+      }
+      .menu ul li {
+        display: inline-block;
+        position: relative;
+        z-index: 1000;
+      }
+      .menu ul li a {
+        padding: 10px 20px;
+        text-decoration: none;
+      }
+      ul.submenu {
+        background-color: #eee;
+        border: 1px solid #ccc;
+        text-align: left;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        z-index: 1001;
+      }
+      .menu ul li:hover ul.submenu {
+        display: block;
+      }
+      ul.submenu li {
+        display: block;
+      }
+      ul.submenu li a {
+        display: block;
+        padding: 5px 10px;
+      }
+      .jumbotron {
+        font-family: "raleway", sans-serif;
+        width: 100%;
+        padding: 80px 40px;
+        box-sizing: border-box;
+        text-align: center;
+        color: white;
+        background-color: #aaa;
+        background-image: url(Jumbotron\ Dapur.png);
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.4;
+      }
+      .jumbotron h2,
+      .jumbotron p {
+        position: relative;
+      }
+      .content {
+        background-color: chocolate;
+        min-height: 500px;
+        overflow: auto;
+      }
+      .thumbnail {
+        background-color: white;
+        text-align: center;
+        padding: 10px;
+        width: 225px;
+        margin: 10px;
+        float: left;
+      }
+      .thumbnail img {
+        width: 100%;
+      }
+      .footer {
+        background-color: orange;
+        min-height: 50px;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Dapoer Anggun</h1>
+        <div class="logo">
+          <img src="Logo-Dapur.png" alt="foto dapur" />
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+              <a href="#">About</a>
+              <ul class="submenu">
+                <li><a href="#">CV</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Portofolio</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+              <ul class="submenu">
+                <li><a href="#">083890503831</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="jumbotron">
+        <div class="overlay"></div>
+        <h2>🍲 SELAMAT DATANG DI DAPOER ANGGUN 🍲</h2>
+        <p>
+          Tempat baru untuk pecinta kuliner dengan berbagai menu pilihan yang
+          menggugah selera. Datang dan nikmati momen spesial pembukaan bersama
+          keluarga, teman, dan orang tersayang. Ada promo menarik khusus untuk
+          Anda yang hadir di hari pertama!
+        </p>
+        <p>📍 [ Link.Ciberko Rt/RW 02/03 ] | 📅 [ 8 Oktober 2025 ]</p>
+      </div>
+      <div class="content">
+        <h2>My Products</h2>
+        <div class="thumbnail">
+          <img src="ORIGINALTEA.png" alt="foto original tea" />
+          <h2>Original Tea</h2>
+          <p>Rp 8.000</p>
+        </div>
+        <div class="thumbnail">
+          <img src="GREEN TEA.png" alt="foto green tea" />
+          <h2>Green Tea</h2>
+          <p>Rp 8.000</p>
+        </div>
+        <div class="thumbnail">
+          <img src="BASO ACI BIASA.png" alt="foto boci biasa" />
+          <h2>Baso Aci Biasa</h2>
+          <p>Rp 6.000</p>
+        </div>
+        <div class="thumbnail">
+          <img src="BASO ACI AYAM SUWIR.png" alt="foto boci ayam" />
+          <h2>Baso Aci Ayam Suwir</h2>
+          <p>Rp 8.000</p>
+        </div>
+        <div class="thumbnail">
+          <img src="BASO ACI MOZARELLA.png" alt="foto boci mozarella" />
+          <h2>Baso Aci Mozarella</h2>
+          <p>Rp 10.000</p>
+        </div>
+        <div class="thumbnail">
+          <img src="AIR MINERAL.png" alt="foto mineral" />
+          <h2>Air Mineral</h2>
+          <p>Free!!!</p>
+        </div>
+      </div>
+      <div class="footer">
+        <p>copyright 2025 My Page</p>
+      </div>
+    </div>
+  </body>
+</html>
